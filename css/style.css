@@ -180,6 +180,8 @@ header {
   background-size: cover;
   background-repeat: round;
   border-radius: 11px;
+  position: relative;
+  right: 74%;
 }
 
 .text-second {
@@ -188,6 +190,8 @@ header {
   justify-content: left;
   text-align: left;
   width: 31rem;
+  position: relative;
+  left: 71%;
 }
 
 .text-second>h2 {
@@ -249,6 +253,9 @@ header {
   font-size: 45px;
   font-family: 'PT Serif', serif;
   margin-top: 2rem;
+  position: relative;
+  bottom: 26%;
+  z-index: -1;
 }
 
 .offer-about {
@@ -257,10 +264,15 @@ header {
   opacity: .8;
   color: rgba(21,21,21,.8);
   margin-top: 2rem;
+  position: relative;
+  bottom: 32%;
+  z-index: -1;
 }
 
 .offer-cards {
   margin-top: 2rem;
+  position: relative;
+  top: 66%;
 }
 
 .order-now {
@@ -455,12 +467,18 @@ header {
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: relative;
+  bottom: 50%;
+  z-index: -1;
 }
 
 .picture-bot {
   display: flex;
   flex-direction: row;
   width: 100%;
+  position: relative;
+  top: 50%;
+  z-index: -1;
 }
 
 .pic {

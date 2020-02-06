@@ -1,3 +1,61 @@
+$(window).scroll(function () {
+    if (
+        $(document).scrollTop() + $(window).height() >
+        $(".second").offset().top + 300
+    ) {
+        $(".img-second").animate({
+            "right": "0"
+        }, 1000);
+        $(".text-second").animate({
+            "left": "0"
+        }, 1000);
+    };
+    if ($(document).scrollTop() + $(window).height() >
+        $('#news').offset().top + 200
+    ) {
+        $('#newsHeader').animate({ 'margin-top': '100' }, 1000);
+        $('#nonagon').animate({ 'margin-top': '70' }, 1000); // если тут заменить .animate на .css и в файле стилей прописать элементу transition: 1s, 
+        $('#triada').animate({ 'margin-top': '10' }, 1000); // то ломается затенение хедера при ресайзе (потому что хедер чекает размер #nonagon для корректного отображения)
+        $('#diod').animate({ 'margin-top': '0' }, 1000); // прям как в анекдоте: "Если я тебе с левой ноги в правую почку уебу, у тебя какой глаз будет дёргаться?"
+    };
+    if (
+        $(document).scrollTop() + $(window).height() >
+        $('.third').offset().top + 200
+    ) {
+        $('.offer-name').animate({ 'bottom': '0' }, 1000);
+        $('.offer-about').animate({ 'bottom': '0' }, 1000);
+        $('.offer-cards').animate({ 'top': '0' }, 1000);
+    };
+    if (
+        $(document).scrollTop() + $(window).height() >
+        $('.fifth').offset().top + 200
+    ) {
+        $('.picture-top').animate({
+            'bottom': '0',
+            'z-index': '0'
+        }, 1000);
+    };
+    if (
+        $(document).scrollTop() + $(window).height() >
+        $('.fifth').offset().top + 400
+    ) {
+        $('.picture-bot').animate({ 'top': '0', 'z-index': '0' }, 1000);
+    };
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let butMenu1 = [
     {
         price: '$25.89',
