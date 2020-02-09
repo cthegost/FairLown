@@ -14,9 +14,9 @@ $(window).scroll(function () {
         $('#news').offset().top + 200
     ) {
         $('#newsHeader').animate({ 'margin-top': '100' }, 1000);
-        $('#nonagon').animate({ 'margin-top': '70' }, 1000); // если тут заменить .animate на .css и в файле стилей прописать элементу transition: 1s, 
-        $('#triada').animate({ 'margin-top': '10' }, 1000); // то ломается затенение хедера при ресайзе (потому что хедер чекает размер #nonagon для корректного отображения)
-        $('#diod').animate({ 'margin-top': '0' }, 1000); // прям как в анекдоте: "Если я тебе с левой ноги в правую почку уебу, у тебя какой глаз будет дёргаться?"
+        $('#nonagon').animate({ 'margin-top': '70' }, 1000);
+        $('#triada').animate({ 'margin-top': '10' }, 1000);
+        $('#diod').animate({ 'margin-top': '0' }, 1000);
     };
     if (
         $(document).scrollTop() + $(window).height() >

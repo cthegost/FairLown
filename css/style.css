@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  overflow: overlay;
+}
+
 header {
   background: #323232;
   width: 100vw;
