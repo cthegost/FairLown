@@ -1,0 +1,109 @@
+footer {
+  text-align: center;
+  background: #323232;
+  height: 33rem;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-info {
+  width: 34%;
+  height: 67%;
+  position: relative;
+  top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-footer {
+  background: url(../img/logo-default1-140x57.png) no-repeat;
+  height: 4rem;
+  margin: 0 auto;
+  width: 8rem;
+  background-size: contain;
+}
+
+.nav-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.nav-footer>a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: 0.3s;
+}
+
+.nav-footer>a:hover  {
+  color: #41A451;
+}
+
+.border-footer {
+  border-left: 1px solid rgba(255,255,255,.5);;
+}
+
+.icon-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+
+.icon-footer>a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255,255,255,.05);
+  color: #fff;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: 0.3s;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.icon-footer>a:hover {
+  background: #41A451;
+}
+
+[class*=fa-]:before {
+  font-family: 'fontawesome';
+}
+
+.icon-footer>a::before {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  speak: none;
+  text-transform: none;
+  vertical-align: middle;
+  top: 14%;
+}
+
+.copyright {
+  margin-top: 7rem;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255,255,255,.5);
+}
+
+.copyright>a {
+  text-decoration: none;
+  color: rgba(255,255,255,.5);
+  transition: 0.3s;
+}
+
+.copyright>a:hover {
+  color: #41A451;
+}

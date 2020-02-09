@@ -1,0 +1,58 @@
+.header-scroll {
+  background: rgba(0, 0, 0, .4);
+  width: 100vw;
+  height: 8rem;
+  position: fixed;
+  z-index: 1;
+}
+
+.container-flex-row-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 83%;
+  padding-left: 9rem;
+  align-items: center;
+}
+
+.logo {
+  background: url(../img/logo-default1-140x57.png) no-repeat;
+  width: 9rem;
+  height: 4rem;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 25rem;
+}
+
+.nav>a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav>a:hover {
+  color: #41A451;
+}
+
+.book-now {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #323232;
+  background: #fff;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.book-now:hover {
+  color: #fff;
+  background: #323232;
+}

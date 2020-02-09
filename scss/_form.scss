@@ -1,0 +1,35 @@
+.flex-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.input-name, .input-phone, .input-date {
+  border: none;
+  color: black;
+  padding-left: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+  outline: none;
+}
+
+.check-in {
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 20px 21px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+.check-in:hover {
+  background: #41A451;
+}
+
+.name-space {
+  text-align: left;
+  font-size: 16px;
+}

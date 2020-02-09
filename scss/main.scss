@@ -1,8 +1,21 @@
-body {
-  padding: 0;
+@import 'header';
+@import 'first';
+@import 'form';
+@import 'second';
+@import 'third';
+@import 'fourth';
+@import 'fifth';
+@import 'news';
+@import 'footer';
+
+* {
   margin: 0;
+  padding: 0;
 }
 
-.lol {
-  padding: 10px;
+body {
+  overflow: overlay;
 }
+
+
+

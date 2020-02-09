@@ -1,0 +1,96 @@
+.third {
+  text-align: center;
+  height: 58rem;
+}
+
+.offer-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-offer {
+  background: url(../img/1.jpg) no-repeat;
+  height: 24rem;
+  width: 23rem;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.img2 {
+  background: url(../img/2.jpg) no-repeat;
+}
+
+.img3 {
+  background: url(../img/3.jpg) no-repeat;
+}
+
+.offer-name {
+  font-size: 45px;
+  font-family: 'PT Serif', serif;
+  margin-top: 2rem;
+  position: relative;
+  bottom: 26%;
+  z-index: -1;
+}
+
+.offer-about {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  opacity: .8;
+  color: rgba(21,21,21,.8);
+  margin-top: 2rem;
+  position: relative;
+  bottom: 32%;
+  z-index: -1;
+}
+
+.offer-cards {
+  margin-top: 2rem;
+  position: relative;
+  top: 66%;
+}
+
+.order-now {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  top: 17rem;
+  background: #41A451;
+  padding: 11px 23px;
+  opacity: 0;
+  transition: 0.3s;
+  box-shadow: 0px 0px 90px 28px black;
+  font-weight: 700;
+}
+
+.card:hover .order-now {
+  opacity: 1;
+  top: 19rem;
+}
+
+.order-now:hover {
+  background: #444141;
+}
+
+.name-card {
+  font-size: 26px;
+  font-family: 'PT Serif', serif;
+  transition: 0.3s;
+  text-decoration: none;
+  margin-top: 2rem;
+  color: black;
+}
+
+.name-card:hover {
+  color: #41A451;
+}
+
+.price-card {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  color: #41A451;
+}

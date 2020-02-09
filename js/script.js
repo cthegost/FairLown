@@ -10,6 +10,15 @@ $(window).scroll(function () {
             "left": "0"
         }, 1000);
     };
+    if (
+        $(document).scrollTop() + $(window).height() >
+        $(".header-scroll").offset().top + 1
+    ) {
+        $(".header-scroll").animate({
+            backgroundColor : "rgb(45, 45, 45)",
+            height : "6rem"
+        }, 1000);
+    };
     if ($(document).scrollTop() + $(window).height() >
         $('#news').offset().top + 200
     ) {
