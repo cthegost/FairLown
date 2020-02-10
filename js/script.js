@@ -10,15 +10,13 @@ $(window).scroll(function () {
             "left": "0"
         }, 1000);
     };
-    if (
-        $(document).scrollTop() + $(window).height() >
-        $(".header-scroll").offset().top + 1
-    ) {
-        $(".header-scroll").animate({
-            backgroundColor : "rgb(45, 45, 45)",
-            height : "6rem"
-        }, 1000);
-    };
+    if ($(window).scrollTop() > 0) {
+        $("#stickyHeader").addClass("header-scroll_on");
+        $("#stickyHeader").removeClass("header-scroll");
+    } else {
+        $("#stickyHeader").removeClass("header-scroll_on");
+        $("#stickyHeader").addClass("header-scroll");
+    }
     if ($(document).scrollTop() + $(window).height() >
         $('#news').offset().top + 200
     ) {
@@ -176,23 +174,23 @@ function ourMenuBlocksGenerator(stock, ident) {
     $('.main-menu').fadeIn(100);
 };
 
-$('#triada1').css('background-color', 'green'); // задаём изначально зелёный цвет первой точки в навигационной триаде
+$('#triada1').css('background-color', 'green');
 
 let counter = 1;
-$('#counter').text(counter); // для самого маленького экрана. Цифра в кружочке.
+$('#counter').text(counter);
 let triadaCrutch = 1;
-let newsCrutch = $('#nonagon').width(); // эта и две предыдущая переменные нужны для корректировки положения блока news при ресайзе
+let newsCrutch = $('#nonagon').width();
 
-$('#diodLeft').click(function () { // это - код для маленьких экранов ( < 575px ), он двигает news влево
+$('#diodLeft').click(function () {
     if (counter > 1) {
         $('#nonagonCrutch').css('margin-left', `${-300 * (counter - 2) + 'px'}`);
-        counter = + counter - 1; // чесслово, туплю и не знаю, как сделать эту строку изящнее, оставив преобразование к числу
+        counter = + counter - 1;
         $('#counter').text(counter);
         triadaCounter()
     };
 });
 
-$('#diodRight').click(function () {   // а это - код для маленьких экранов ( < 575px ), который двигает news вправо
+$('#diodRight').click(function () {
     if (counter < 9) {
         $('#nonagonCrutch').css('margin-left', `${-300 * counter + 'px'}`);
         counter = + counter + 1;
@@ -201,7 +199,7 @@ $('#diodRight').click(function () {   // а это - код для малень�
     };
 });
 
-function triadaCounter() { // для адекватного ресайза news - синхронизируем counter и triadaCrutch
+function triadaCounter() {
     if (counter < 4) {
         triadaCrutch = 1
     };
@@ -213,8 +211,8 @@ function triadaCounter() { // для адекватного ресайза news 
     };
 };
 
-$(window).resize(function () { // ужасно нечитабельная функция для для корректировки положения блока news при ресайзе. Киберфорум - маздай!
-    newsCrutchAlter = $('#nonagon').width(); // http://www.cyberforum.ru/javascript/thread2560354.html
+$(window).resize(function () {
+    newsCrutchAlter = $('#nonagon').width();
     if (newsCrutchAlter != newsCrutch) {
         newsCrutch = $('#nonagon').width();
         if (newsCrutch == 300) {
@@ -347,3 +345,103 @@ $('#triada3').click(function () {
         $('#nonagonCrutch').css('margin-left', '-1020px');
     };
 });
+
+
+$(function () {
+    $('#zoom1').click(function () {
+        $('.photosModalInner').css('margin-left', '0');
+        $('#photosModal').css('display', 'block');
+    });
+    $('#zoom2').click(function () {
+        $('.photosModalInner').css('margin-left', '-80%');
+        $('#photosModal').css('display', 'block');
+    });
+    $('#zoom3').click(function () {
+        $('.photosModalInner').css('margin-left', '-160%');
+        $('#photosModal').css('display', 'block');
+    });
+    $('#zoom4').click(function () {
+        $('.photosModalInner').css('margin-left', '-240%');
+        $('#photosModal').css('display', 'block');
+    });
+    $('#zoom5').click(function () {
+        $('.photosModalInner').css('margin-left', '-320%');
+        $('#photosModal').css('display', 'block');
+    })
+})
+
+$(function(){
+    $('.close').click(function(){
+        $('#photosModal').css('display', 'none');
+    });
+})
+
+
+$('.rightButton').click(function(){
+        let margin = (parseInt($('.photosModalInner').css('margin-left')))
+        let width = ($('.modalWrapper').width())
+        let fractionNum = -margin / width
+    if ($('.photosModalInner').css('margin-left') == '0px'){
+        $('.photosModalInner').animate({'margin-left': '-80%'}, 1000);
+        console.log(fractionNum);
+        return;
+    }
+    if  (fractionNum>='0.11' && fractionNum<='0.31'){
+        console.log(fractionNum);
+        $('.photosModalInner').animate({'margin-left': '-160%'}, 1000);
+        return;
+    }
+    if (fractionNum>='0.26' && fractionNum <='0.47'){
+        console.log(fractionNum);
+        $('.photosModalInner').animate({'margin-left': '-240%'}, 1000);
+
+        return;
+    }
+    if (fractionNum>='0.42' && fractionNum <= '0.62'){
+        console.log(fractionNum);
+        $('.photosModalInner').animate({'margin-left': '-320%'}, 1000);
+
+        return;
+    }
+    if (fractionNum>='0.57'){
+        console.log(fractionNum);
+        $('.photosModalInner').animate({'margin-left': '0'}, 1000);
+        
+        return;
+    }
+})
+
+$('.leftButton').click(function(){
+    let margin = (parseInt($('.photosModalInner').css('margin-left')))
+    let width = ($('.modalWrapper').width())
+    let fractionNum = -margin / width
+    console.log(fractionNum);
+if ($('.photosModalInner').css('margin-left') == '0px'){
+    $('.photosModalInner').animate({'margin-left': '-320%'}, 1000);
+    console.log(fractionNum);
+    return;
+}
+if  (fractionNum>='0.11' && fractionNum<='0.31'){
+    console.log(fractionNum);
+    $('.photosModalInner').animate({'margin-left': '0'}, 1000);
+    return;
+}
+if (fractionNum>='0.26' && fractionNum <='0.47'){
+    console.log(fractionNum);
+    $('.photosModalInner').animate({'margin-left': '-80%'}, 1000);
+
+    return;
+}
+if (fractionNum>='0.42' && fractionNum <= '0.62'){
+    console.log(fractionNum);
+    $('.photosModalInner').animate({'margin-left': '-160%'}, 1000);
+
+    return;
+}
+if (fractionNum>='0.57'){
+    console.log(fractionNum);
+    $('.photosModalInner').animate({'margin-left': '-240%'}, 1000);
+    
+    return;
+}
+})

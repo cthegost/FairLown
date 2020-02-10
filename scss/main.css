@@ -1,9 +1,23 @@
-.header-scroll {
-  background: rgba(0, 0, 0, 0.4);
+#stickyHeader {
   width: 100vw;
-  height: 8rem;
   position: fixed;
   z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-scroll {
+  background: rgba(0, 0, 0, 0.4);
+  height: 8rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header-scroll_on {
+  background: #323232;
+  height: 6rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container-flex-row-header {
@@ -771,6 +785,7 @@
   text-align: center;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon .nonTop:hover {
@@ -781,6 +796,7 @@
   font-size: 35px;
   margin-top: 20px;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon h4:hover {
@@ -794,14 +810,11 @@
   text-align: justify;
 }
 
-#news #nonagon #nonagonCrutch .nonagon p:hover {
-  color: green;
-}
-
 #news #nonagon #nonagonCrutch .nonagon h5 {
   font-size: 20px;
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon h5:hover {
@@ -971,6 +984,96 @@ footer {
 
 .copyright > a:hover {
   color: #41A451;
+}
+
+#photosModal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+#photosModal button {
+  background-color: rgba(255, 255, 255, 0.0001);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#photosModal .leftButton {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+#photosModal .rightButton {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+}
+
+#photosModal .close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+}
+
+#photosModal button i {
+  font-size: 200%;
+}
+
+#photosModal .photosModalInner {
+  margin: auto;
+  position: relative;
+  width: 500%;
+  height: 100%;
+}
+
+#photosModal .photosModalInner .modalWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  vertical-align: middle;
+  height: 80%;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider .photosSliderPhoto {
+  width: 20%;
+  display: inline-block;
+  margin-left: 5%;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 * {

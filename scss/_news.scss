@@ -57,6 +57,7 @@
   text-align: center;
   color: white;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon .nonTop:hover {
@@ -67,6 +68,7 @@
   font-size: 35px;
   margin-top: 20px;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon h4:hover {
@@ -80,14 +82,11 @@
   text-align: justify;
 }
 
-#news #nonagon #nonagonCrutch .nonagon p:hover {
-  color: green;
-}
-
 #news #nonagon #nonagonCrutch .nonagon h5 {
   font-size: 20px;
   margin-top: 20px;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
 }
 
 #news #nonagon #nonagonCrutch .nonagon h5:hover {
