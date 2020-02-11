@@ -1024,13 +1024,13 @@ footer {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
-  color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: .5;
 }
 
 #photosModal button i {
   font-size: 200%;
+  font-style: normal;
 }
 
 #photosModal .photosModalInner {
@@ -1074,6 +1074,26 @@ footer {
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo1 {
+  background: url(../img/roza-rozovaia-tsvetok-1.jpg) no-repeat;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo2 {
+  background: url(../img/valentin-petrov-jungle-book-concept-art-art-les.jpg) no-repeat;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo3 {
+  background: url(../img/space-marine-kosmodesant-ultramariny-ognemiot-iarost-topor-c.jpg) no-repeat;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo4 {
+  background: url(../img/starcraft-starkraft-strategiia-zergi-zergs-zagara-zagara-kor.jpg) no-repeat;
+}
+
+#photosModal .photosModalInner .modalWrapper .photosSlider #photo5 {
+  background: url(../img/khot-dog-bulochka-sosiska-bekon-salat.jpg) no-repeat;
 }
 
 * {
