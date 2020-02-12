@@ -4,6 +4,12 @@
   z-index: 1;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-scroll {
@@ -32,8 +38,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  width: 83%;
-  padding-left: 9rem;
+  width: 102rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -89,6 +94,30 @@
   background: #323232;
 }
 
+@media screen and (max-width: 1678px) {
+  .container-flex-row-header {
+    width: 91rem;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .container-flex-row-header {
+    width: 85rem;
+  }
+}
+
+@media screen and (max-width: 1413px) {
+  .container-flex-row-header {
+    width: 78rem;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .container-flex-row-header {
+    width: 62rem;
+  }
+}
+
 .first {
   width: 100%;
   height: 47rem;
@@ -97,7 +126,7 @@
 }
 
 .back {
-  background: url(../img/ozero-zakat-okoiom-svetilo-bereg-tsvety.jpg) no-repeat;
+  background: url(../img/ostrov-anak-krakatau-indoneziia-vulkan-izverzhenie.jpg) no-repeat;
   background-repeat: round;
   width: 120%;
   height: 100%;
@@ -275,7 +304,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 63%;
+  width: 75rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -358,17 +387,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 63%;
+  width: 75rem;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 22rem;
 }
 
 .third {
   text-align: center;
   height: 58rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .offer-cards {
@@ -477,6 +511,12 @@
   background: #f5f5f5;
   width: 100%;
   height: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-flex-column-center {
@@ -488,12 +528,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 63%;
+  width: 75rem;
   height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 22rem;
 }
 
 .menu-name {
@@ -995,6 +1034,8 @@ footer {
   top: 0;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 9999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #photosModal button {
@@ -1065,6 +1106,8 @@ footer {
   justify-content: center;
   vertical-align: middle;
   height: 80%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #photosModal .photosModalInner .modalWrapper .photosSlider .photosSliderPhoto {

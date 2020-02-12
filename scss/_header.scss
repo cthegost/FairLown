@@ -3,6 +3,8 @@
   position: fixed;
   z-index: 1;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
 }
 
 .header-scroll {
@@ -22,8 +24,7 @@
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
-  width: 83%;
-  padding-left: 9rem;
+  width: 102rem;
   align-items: center;
 }
 
@@ -66,4 +67,30 @@
 .book-now:hover {
   color: #fff;
   background: #323232;
+}
+
+
+
+@media screen and (max-width: 1678px) {
+  .container-flex-row-header {
+    width: 91rem;
+  }
+}
+
+@media screen and (max-width: 1540px) {
+  .container-flex-row-header {
+    width: 85rem;
+  }
+}
+
+@media screen and (max-width: 1413px) {
+  .container-flex-row-header {
+    width: 78rem;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .container-flex-row-header {
+    width: 62rem;
+  }
 }
