@@ -76,3 +76,18 @@
   max-width: 550px;
   letter-spacing: -.03em;
 }
+
+
+@media screen and (max-width: 636px) {
+  .welcome-name {
+    font-size: 62px;
+    font-family: 'PT Serif', serif;
+    letter-spacing: .06em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+
+  .welcome-about {
+    font-size: 14px;
+  }
+}

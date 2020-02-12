@@ -107,3 +107,9 @@ footer {
 .copyright>a:hover {
   color: #41A451;
 }
+
+@media screen and (max-width: 1115px) {
+  .icon-footer>a {
+    background: none;
+  }
+}

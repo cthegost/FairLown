@@ -91,3 +91,19 @@
 .out-but:hover {
   padding: 20px;
 }
+
+@media screen and (max-width: 1132px) {
+  .picture-top {
+    flex-direction: column;
+  }
+
+  .fifth {
+    height: 123rem;
+  }
+}
+
+@media screen and (max-width: 1005px) {
+  .picture-bot {
+    flex-direction: column;
+  }
+}

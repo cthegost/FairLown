@@ -96,3 +96,17 @@
   margin-top: 1rem;
   color: #41A451;
 }
+
+@media screen and (max-width: 1130px) {
+  .third {
+    height: 105rem;
+  }
+  
+  .offer-cards {
+    top: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}

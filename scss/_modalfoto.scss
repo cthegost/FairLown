@@ -88,27 +88,32 @@
 
         #photo1 {
           background: url(../img/roza-rozovaia-tsvetok-1.jpg) no-repeat;
-          background-size: cover;
+          background-size: contain;
+          background-position: center;
         }
 
         #photo2 {
           background: url(../img/valentin-petrov-jungle-book-concept-art-art-les.jpg) no-repeat;
-          background-size: cover;
+          background-size: contain;
+          background-position: center;
         }
 
         #photo3 {
           background: url(../img/space-marine-kosmodesant-ultramariny-ognemiot-iarost-topor-c.jpg) no-repeat;
-          background-size: cover;
+          background-size: contain;
+          background-position: center;
         }
 
         #photo4 {
           background: url(../img/starcraft-starkraft-strategiia-zergi-zergs-zagara-zagara-kor.jpg) no-repeat;
-          background-size: cover;
+          background-size: contain;
+          background-position: center;
         }
 
         #photo5 {
           background: url(../img/khot-dog-bulochka-sosiska-bekon-salat.jpg) no-repeat;
-          background-size: cover;
+          background-size: contain;
+          background-position: center;
         }
 
       }

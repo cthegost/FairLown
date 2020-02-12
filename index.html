@@ -14,6 +14,18 @@
 <body>
   <header id="stickyHeader" class="header-scroll">
     <div class="container-flex-row-header">
+      <div class="overlay">
+        <nav class="overlayMenu">  
+            <ul role="menu">
+                <li><a href="#" role="menuitem">HOME</a></li>
+                <li><a href="#" role="menuitem">LEGO</a></li>
+                <li><a href="#" role="menuitem">TYPO GRAPHY</a></li>
+                <li><a href="#" role="menuitem">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="navBurger" role="navigation" id="navToggle"></div> 
       <a href="#" class="logo">
 
       </a>
@@ -45,28 +57,37 @@
     <section class="second">
       <div class="guest-form">
         <div class="flex-form">
-          <div class="name-guest">
+          <div class="name-guest w-20">
             <div class="name-space">NAME</div>
             <div class="name-form">
               <form action="hz.php"><input class="input-name" type="text" name="fname" placeholder="Your name"></form>
             </div>
           </div>
-          <div class="phone-guest">
+          <div class="phone-guest w-20">
             <div class="name-space">PHONE</div>
             <div class="name-form">
               <form action="hz.php"><input class="input-phone" type="phone" name="fname" placeholder="Your phone">
               </form>
             </div>
           </div>
-          <div class="date-guest">
+          <div class="date-guest w-20">
             <div class="name-form">
               <form action="hz.php"><input class="input-date" type="date" name="fname"></form>
             </div>
           </div>
-          <div class="people-guest">
-
-          </div>
-          <a class="check-in" href="#">CHECK AVAILABILITY</a>
+          <div class="title peopleCount w-20">
+            <p class="reservationTitle">NO. OF PEOPLE</p>
+            <select name="number">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+            </select>
+        </div>
+          <a class="check-in w-20" href="#">CHECK AVAILABILITY</a>
         </div>
       </div>
       <div class="container-flex-row ov-h">
