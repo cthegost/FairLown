@@ -94,7 +94,7 @@
   background: #323232;
 }
 
-@media screen and (max-width: 1678px) {
+@media screen and (max-width: 1708px) {
   .container-flex-row-header {
     width: 91rem;
   }
@@ -126,7 +126,7 @@
 }
 
 .back {
-  background: url(../img/ostrov-anak-krakatau-indoneziia-vulkan-izverzhenie.jpg) no-repeat;
+  background: url(../img/kater-vodoem-fotoart-temnyi-fon-mostik-pirs-gory-tuchi-nebo.jpg) no-repeat;
   background-repeat: round;
   width: 120%;
   height: 100%;
@@ -1150,6 +1150,6 @@ footer {
 }
 
 body {
-  overflow: overlay;
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */
